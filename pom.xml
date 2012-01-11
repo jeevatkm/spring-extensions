@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	Title		: spring-extensions for spring-framework
+	Description	: myjeeva.com contributes towards the spring-extensions for real world business application need
+	Copyright	: (c) 2010-2012 www.myjeeva.com
+	@filename	: pom.xml 
+	@author		: <a href="jeeva@myjeeva.com">Jeevanandam</a>
+	@date		: January 10, 2012 11:10:11 PM GMT+05:30
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+	<parent>
+    	<groupId>org.sonatype.oss</groupId>
+	    <artifactId>oss-parent</artifactId>
+    	<version>7</version>
+    </parent>
+    
+	<groupId>com.myjeeva</groupId>
+	<artifactId>spring-extensions</artifactId>
+	<packaging>jar</packaging>
+	<name>Spring Extensions</name>
+	<version>1.0.0-SNAPSHOT</version>
+	<description>Spring Extensions for spring-framework</description>
+	<url>http://www.myjeeva.com/spring-extensions</url>
+	<licenses>
+		<license>
+			<name>The MIT License (MIT)</name>
+			<url>http://www.opensource.org/licenses/mit-license.php</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<scm>
+    	<connection>scm:git:git@github.com:jeevatkm/spring-extensions.git</connection>
+    	<developerConnection>scm:git:git@github.com:jeevatkm/spring-extensions.git</developerConnection>
+    	<url>git@github.com:jeevatkm/spring-extensions.git</url>
+  	</scm>
+	<developers>
+    	<developer>
+      		<id>jeevatkm</id>
+      		<name>Jeevanandam</name>
+      		<email>jeeva@myjeeva.com</email>
+      	</developer>
+    </developers>
+
+<!-- External Dependencies -->
+    <dependencies>
+    	<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.15</version>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-core</artifactId>
+			<version>2.0.6.RELEASE</version>
+		</dependency>
+		<dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.4</version>
+            <scope>provided</scope>
+        </dependency>
+	</dependencies>	
+</project>
