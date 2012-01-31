@@ -19,7 +19,7 @@
 	<artifactId>spring-extensions</artifactId>
 	<packaging>jar</packaging>
 	<name>Spring Extensions</name>
-	<version>1.0.0</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<description>Spring Extensions for spring-framework</description>
 	<url>http://www.myjeeva.com/spring-extensions</url>
 	<licenses>
