@@ -3,7 +3,12 @@ Extending spring-framework towards enterprise application need!
 spring-extensions
 =================
 
-Initial public release [1.0.0-SNAPSHOT]
+Public Release [v1.0.0]
+----------------------
+spring-extensions library
+
+
+Initial public SNAPSHOT release [v1.0.0-SNAPSHOT]
 ---------------------------------------
 - Cross Domain spring secure channel processing extension module
 
