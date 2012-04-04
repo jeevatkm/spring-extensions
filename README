@@ -3,6 +3,14 @@ Extending spring-framework towards enterprise application need!
 spring-extensions
 =================
 
+Public Release [v1.0.1]
+-----------------------
+Secure Link implementation - spring-extensions library
+* Download link's protection
+* Timed Validity for secured link's
+* URI/URL link's protection
+
+
 Public Release [v1.0.0]
 ----------------------
 spring-extensions library
