@@ -44,8 +44,32 @@ import com.myjeeva.spring.security.util.SecureUriMapper;
 import com.myjeeva.spring.security.util.SpringExtensionsUtil;
 
 /**
- * @author jeeva
- *
+ * {@link SecureServerURI} is Filter implementation that being invoked by Spring {@link DelegatingFilterProxy}
+ * mapped in web.xml
+ * 
+ * <p>Filter configuration looks like-</p>
+ * <pre>
+ * 	&lt;filter>
+ * 		&lt;filter-name>secureUriFilter&lt;/filter-name>
+ * 		&lt;filter-class>org.springframework.web.filter.DelegatingFilterProxy&lt;/filter-class>
+ * 	&lt;/filter>
+ * 
+ * 	&lt;filter-mapping>
+ * 		&lt;filter-name>secureUriFilter&lt;/filter-name>
+ * 		&lt;url-pattern>/data/secure/*&lt;/url-pattern>
+ * 	&lt;/filter-mapping>
+ * 	
+ * 	&lt;filter-mapping>
+ * 		&lt;filter-name>secureUriFilter&lt;/filter-name>
+ * 		&lt;url-pattern>/protected/*&lt;/url-pattern>
+ * 	&lt;/filter-mapping></pre>
+ * 
+ * <p>So {@link #doFilter(ServletRequest, ServletResponse, FilterChain)} method applies the Ant-style path patterns &amp;  
+ * hashing logic for link validation.</p>
+ * 
+ * @since v1.0.1
+ * 
+ * @author Jeevanandam (jeeva@myjeeva.com)
  */
 public class SecureServerURI implements Filter {
 	/** Logger */
@@ -120,6 +144,12 @@ public class SecureServerURI implements Filter {
 
 	}
 	
+	/**
+	 * writes the Bad Request String in the Servlet response if condition falis
+	 * 
+	 * @param res a {@link javax.servlet.http.HttpServletResponse} object
+	 * @throws IOException
+	 */
 	private void badRequest(HttpServletResponse res) throws IOException {
 		res.setContentType("text/html");
 		PrintWriter pw = res.getWriter();

@@ -36,6 +36,7 @@ import org.springframework.util.Assert;
  * So {@link #getPassKey(String)} method applies the Ant-style path patterns for verification.
  *
  * @since v1.0.1
+ * 
  * @author Jeevanandam (jeeva@myjeeva.com)
  */
 public class SecureUriMapperImpl implements SecureUriMapper {

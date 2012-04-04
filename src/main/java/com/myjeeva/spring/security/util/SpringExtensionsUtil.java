@@ -30,8 +30,11 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 /**
- * @author jeeva
- *
+ * myjeeva.com Spring Extensions library Helper Util implementation 
+ * 
+ * @since v1.0.1
+ * 
+ * @author Jeevanandam (jeeva@myjeeva.com)
  */
 public class SpringExtensionsUtil {
 	/** Logger */

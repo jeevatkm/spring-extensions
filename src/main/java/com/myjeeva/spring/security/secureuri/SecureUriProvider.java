@@ -23,8 +23,29 @@
  */
 package com.myjeeva.spring.security.secureuri;
 
+/**
+ * <p>Concrete implementation of {@link SecureUriProvider} that holds definitions of Secure link computation.</p>
+ * <p>Like Content link restriction, link restriction, timed link validity, download link protection, etc.</p> 
+ * 
+ * <p>So {@link #generateSecureUri(String, long, String)} method generates the secure link with given params</p>
+ *
+ * @since v1.0.1
+ * 
+ * @author Jeevanandam (jeeva@myjeeva.com)
+ */
 public interface SecureUriProvider {
 
-	public abstract String generateSecureUri(String uri, long expiryTime, String additionalParams);
+	/**
+	 * Generate a secure link/download link for the given parameters. This function will return a hashed URL.
+	 * 
+	 * <p>for compute a secure URI below params are used.</p>
+	 * @param file - <code>String</code> - base URI, i.e everything after myjeeva.com in file path, including the leading slash 
+	 * <br/>(for example: http://myjeeva.com/view/content/file.txt<br/>http://myjeeva.com/view/content/index.jsp
+	 * <br/>http://myjeeva.com/content/sample.pdf)
+	 * @param expiryTime - <code>long</code> - expiry in milliseconds since current time. Use 0 for no expiry
+	 * @param additionalParams - <code>String</code> - custom URL parameters (query String)
+	 * @return secure link of hash URL - a {@link java.lang.String} object
+	 */
+	public abstract String generateSecureUri(String file, long expiryTime, String additionalParams);
 
 }
