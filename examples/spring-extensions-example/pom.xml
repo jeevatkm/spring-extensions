@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	Title		: sample project for spring-extensions library
+	Copyright	: (c) 2008-2012 www.myjeeva.com
+	@filename	: pom.xml 
+	@author		: <a href="jeeva@myjeeva.com">Jeevanandam</a>
+	@date		: February 12, 2012 1:35:56 PM GMT+05:30
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+	<groupId>com.myjeeva</groupId>
+	<artifactId>spring-extensions-example</artifactId>
+	<packaging>war</packaging>
+	<name>Spring Extensions</name>
+	<version>1.0.1</version>
+	<description>Demo Web Application of Spring Extensions Library</description>
+	<url>http://www.myjeeva.com/spring-extensions</url>
+	<licenses>
+		<license>
+			<name>The MIT License (MIT)</name>
+			<url>http://www.opensource.org/licenses/mit-license.php</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+<!-- Dependencies -->
+    <dependencies>
+		<dependency>
+			<groupId>com.myjeeva</groupId>
+			<artifactId>spring-extensions</artifactId>
+			<version>1.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>	
+</project>

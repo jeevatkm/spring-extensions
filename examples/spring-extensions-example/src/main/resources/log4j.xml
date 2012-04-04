@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<!-- 
+	Title		: sample project for spring-extensions library
+	Copyright	: (c) 2008-2012 www.myjeeva.com
+	@filename	: pom.xml 
+	@author		: <a href="jeeva@myjeeva.com">Jeevanandam</a>
+	@date		: February 12, 2012 2:05:56 PM GMT+05:30
+-->
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="false">
+        <appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+                <layout class="org.apache.log4j.PatternLayout">
+                     <param name="ConversionPattern"
+                                value="[%d{dd/MM/yy hh:mm:ss:sss z}] %5p %c{2}: %m%n" />
+                </layout>
+        </appender>
+
+        <appender name="ASYNC" class="org.apache.log4j.AsyncAppender">
+            <appender-ref ref="CONSOLE"/>
+        	<appender-ref ref="FILE"/>
+        </appender>
+
+        <appender name="FILE" class="org.apache.log4j.DailyRollingFileAppender">
+                <param name="File" value="${catalina.home}/logs/spring-extensions-myjeeva.log"/>
+                <layout class="org.apache.log4j.PatternLayout">
+                     <param name="ConversionPattern"
+                                value="[%d{dd/MM/yy hh:mm:ss:sss z}] %5p %c{2}: %m%n" />
+                </layout>
+        </appender>
+
+        <root>
+        	<level value="info" />
+        	<appender-ref ref="ASYNC" />
+        </root>
+</log4j:configuration>

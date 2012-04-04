@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	Title		: application context - Secure URI/URL for spring-extensions Library 
+	Copyright	: (c) 2008-2012 www.myjeeva.com
+	Dated		: February 12, 2012 1:35:56 PM GMT+05:30	
+	@filename	applicationContext-secure-uri.xml 
+	@author	<a href="jeeva@myjeeva.com">Jeevanandam</a>
+-->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-2.5.xsd        
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+	
+	<bean id="secureUriFilter" class="com.myjeeva.spring.security.secureuri.SecureServerURI">
+		<property name="secureUriMapper" ref="secureUriMapper" />
+	</bean>
+	
+	<bean id="secureUriProvider" class="com.myjeeva.spring.security.secureuri.SecureUriProviderImpl">
+		<property name="secureUriMapper" ref="secureUriMapper" />
+	</bean>
+	
+	<bean id="secureUriMapper" class="com.myjeeva.spring.security.util.SecureUriMapperImpl">
+        <property name="uriMappings">
+	      <map>
+	          <entry key="tg54f54h59e"><value>/spring-example/data/secure/*</value></entry>
+	          <entry key="34ti94l2qo"><value>/spring-example/protected/*</value></entry>
+	      </map>
+	 	</property>
+    </bean>    
+	
+</beans>

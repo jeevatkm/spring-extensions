@@ -41,7 +41,11 @@
       		<email>jeeva@myjeeva.com</email>
       	</developer>
     </developers>
-
+    
+    <properties>
+		<spring.security.version>2.0.6.RELEASE</spring.security.version>  
+	</properties>
+	
 <!-- External Dependencies -->
     <dependencies>
     	<dependency>
@@ -58,13 +62,23 @@
 	<dependency>
 		<groupId>org.springframework.security</groupId>
 		<artifactId>spring-security-core</artifactId>
-		<version>2.0.6.RELEASE</version>
+		<version>${spring.security.version}</version>
 	</dependency>
 	<dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
-            <version>2.4</version>
-            <scope>provided</scope>
-        </dependency>
+        <groupId>org.springframework.security</groupId>
+        <artifactId>spring-security-core-tiger</artifactId>
+        <version>${spring.security.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.security</groupId>
+        <artifactId>spring-security-taglibs</artifactId>
+        <version>${spring.security.version}</version>
+    </dependency>
+	<dependency>
+         <groupId>javax.servlet</groupId>
+         <artifactId>servlet-api</artifactId>
+         <version>2.5</version>
+         <scope>provided</scope>
+     </dependency>
 	</dependencies>	
 </project>
