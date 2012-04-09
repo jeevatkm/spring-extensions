@@ -9,8 +9,10 @@ Enhancing functionality towards enterprise application need using [spring-framew
 
 Getting Started: take a look at these Articles
 ----------------------------------------------
-[Library Page][1]
+[Library Home page][1]
+
 [How to secure/protect: file or content or page or download link?][4]
+
 [Cross Domain Spring Channel Processing using spring-extensions Library][5]
 
 
@@ -19,19 +21,24 @@ Release Notes
 
 ###v1.0.1 on Apr 04, 2012
 **New Features**
-* Secure Link implementation
+
+*   Secure Link implementation
+
     > For file or download or content or page link
     > Link expiry time
 
 **Bug Fixes** 
+
 *None*
 
 ###v1.0.0 on Jan 31, 2012
 **New Features**
-* Cross Domain spring channel processing module
-   > Initial public release of spring-extensions library
+*   Cross Domain spring channel processing module
+
+    > Initial public release of spring-extensions library
 
 **Bug Fixes** 
+
 *None*
 
 ###v1.0.0-SNAPSHOT on Jan 11, 2012
