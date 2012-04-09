@@ -1,5 +1,5 @@
 
-#"spring-extensions" library by myjeeva.com
+"spring-extensions" library by myjeeva.com
 -------------------------------------------
 
 Enhancing functionality towards enterprise application need using [spring-framework][2]. For more information please see [myjeeva.com][1]
@@ -7,7 +7,7 @@ Enhancing functionality towards enterprise application need using [spring-framew
 *Issues(Bug Tracker)/New feature: [click here][3]*
 
 
-##Getting Started: take a look at these Articles
+Getting Started: take a look at these Articles
 ----------------------------------------------
 [Library Home page][1]
 
@@ -16,7 +16,7 @@ Enhancing functionality towards enterprise application need using [spring-framew
 [Cross Domain Spring Channel Processing using spring-extensions Library][5]
 
 
-##Release Notes
+Release Notes
 -------------
 
 ####v1.0.1 on Apr 04, 2012
@@ -25,7 +25,6 @@ Enhancing functionality towards enterprise application need using [spring-framew
 *   Secure Link implementation
 
     > For file or download or content or page link
-    >
     > Link expiry time
 
 **Bug Fixes** 
