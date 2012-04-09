@@ -22,10 +22,10 @@ Release Notes
 ####v1.0.1 on Apr 04, 2012
 **New Features**
 
-*   Secure Link implementation
+*   Secure Link module
 
-    > For file or download or content or page link
-    > Link expiry time
+    *	For file or download or content or page link
+    *	Link expiry time
 
 **Bug Fixes** 
 
@@ -50,7 +50,10 @@ Release Notes
 > Cross Domain spring channel processing module
 
 
-----
+
+
+
+
 Please let me know your any issues, suggestions and thoughts. 
 
 By [www.myjeeva.com][1]
