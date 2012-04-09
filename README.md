@@ -7,7 +7,7 @@ Enhancing functionality towards enterprise application need using [spring-framew
 *Issues(Bug Tracker)/New feature: [click here][3]*
 
 
-Getting Started: take a look at these Articles
+Getting Started: take a look at these articles
 ----------------------------------------------
 [Library Home page][1]
 
@@ -50,16 +50,16 @@ Release Notes
 > Cross Domain spring channel processing module
 
 
+* * *
 
 
 
-
-Please let me know your any issues, suggestions and thoughts. 
+Please let me know, if any issues & suggestions. 
 
 By [www.myjeeva.com][1]
 
 
-[1]: http://www.myjeeva.com/spring-extensions "spring-extensions library"
+[1]: http://www.myjeeva.com/spring-extensions/ "spring-extensions library"
 [2]: http://springsource.org "SpringSource.org"
 [3]: https://github.com/jeevatkm/spring-extensions/issues "Issues(Bug Tracker)/New feature"
 
