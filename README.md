@@ -1,8 +1,7 @@
-
 "spring-extensions" library by myjeeva.com
 -------------------------------------------
 
-Enhancing functionality towards enterprise application need using [spring-framework][2]. For more information please see [myjeeva.com][1]
+Reusable components and ready to plugged into real-world application over [spring-framework][2]. For more information please see [myjeeva.com][1]
 
 *Issues(Bug Tracker)/New feature: [click here][3]*
 
