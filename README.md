@@ -1,3 +1,5 @@
+# This library is not maintained
+
 "spring-extensions" library by myjeeva.com
 -------------------------------------------
 
